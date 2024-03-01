@@ -79,7 +79,7 @@ console.log("True")
 
  //                                                        Forin Loop
 
- // object par loop chalane ke leye forin loop hota hai
+//  // object par loop chalane ke leye forin loop hota hai
  
  var obj={
     name:'saim',
@@ -99,7 +99,7 @@ console.log("True")
  },3000)
  //                                                     CallBack Function
 
- //                                                     FirstClass Function
+//  //                                                     FirstClass Function
 
 function abcd(a){
     a();
@@ -107,9 +107,9 @@ function abcd(a){
 
 abcd(function(){console.log('hello viewer')})
 
- //                                                     FisrtClass Function
+//  //                                                     FisrtClass Function
 
- //                                                    Constructor Function
+//  //                                                    Constructor Function
 function biscuit(colors){
     this.width='12px';
     this.heigth='20px';
@@ -123,4 +123,83 @@ function biscuit(colors){
  //                                                    Constructor Function
 
 
+ //                                                    IIFE  ( Immediately Invoked Function Expression)
+
+//pending
+ //                                                    IIFE  ( Immediately Invoked Function Expression)
+
+ //                                                    Protoype Inheritance
+ var human={
+    canwalk:true,
+    cantalk:true,
+    canfly:false,
+ }
+ var students={
+    speakeEnglish:true,
+    understandMath:true,
+    learncomputer:true,
+ }
+ students.__proto__=human
+ //                                                    Protoype Inheritance
+
+ //                                                    this 
+
+//  global scope 
+
+console.log(this)
+
+//  global scope 
+
+//  local scope 
+function ans(){
+    console.log(this)
+}
+ans()
+//  local scope
+
+//  Method scope 
+var THIS={
+   
+    con:function(){
+        console.log(this)
+    },
+    name:"saim",
+    age:21
+}
+THIS.con();
+
+//  Method scope 
+
+
+ 
+ //                                                    this 
+
+ //                                                   Call
+function saim(val1,val2,val3){
+    console.log(this,val1,val2,val3)
+}
+var obj={name:"saim"}
+saim.call(obj,1,2,3)
+ //                                                   Call 
+
+ 
+ //                                                   apply
+function da(val1,val2,val3){
+    console.log(this,val1,val2,val3)
+}
+var obj1={name:"saim",age:19}
+da.apply(obj1,[1,2,3])
+ //                                                   apply 
+
+  //                                                   bind
+function e(val1,val2,val3){
+    console.log(this[0])
+}
+ var bind =e.bind("bird cow",)
+ bind()
+
+ //                                                   bind 
+
+
+ 
 
