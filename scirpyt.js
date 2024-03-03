@@ -1,204 +1,241 @@
- //                                                              Javascirpt
+//  //                                                              Javascirpt
 
-//                                                               Spread Operator
+// //                                                               Spread Operator
 
 
- // Spread Opertor array/boject ki value ko copy karne me madad deta hai
+//  // Spread Opertor array/boject ki value ko copy karne me madad deta hai
  
- //                                                             Array
-var a=[
-    {
-        name:'saim',
-        age:'18',
-    },
-    {
-        name:'Rahim',
-        age:'4',
-    },
-] 
+//  //                                                             Array
+// var a=[
+//     {
+//         name:'saim',
+//         age:'18',
+//     },
+//     {
+//         name:'Rahim',
+//         age:'4',
+//     },
+// ] 
 
-var b=[...a]
-b.pop();
+// var b=[...a]
+// b.pop();
 
-console.log(b)
-console.log(a)
+// console.log(b)
+// console.log(a)
 
-//                                                           Array
+// //                                                           Array
 
-//                                                            Object
-var c={
-    name:'Ali',
-    age:23,
-}
+// //                                                            Object
+// var c={
+//     name:'Ali',
+//     age:23,
+// }
 
-var d={...c}
+// var d={...c}
 
-d.name='hasan'
+// d.name='hasan'
 
-console.log(d)
-console.log(c)
-
-
+// console.log(d)
+// console.log(c)
 
 
-//                                                            Object
-
- //                                                               Spread Operator
 
 
- //                                                                Truty & Falsy
+// //                                                            Object
 
- // js mein kuch bhi liko woh mainly do chezo se belong karta hi
+//  //                                                               Spread Operator
 
 
- //                                                         Truty
- if(1){
-console.log("True")
- }
- else{
-    console.log("False")
+//  //                                                                Truty & Falsy
 
- }
- //                                                         Truty
+//  // js mein kuch bhi liko woh mainly do chezo se belong karta hi
 
- //                                                         Falsy
 
- // Falsy value ye hai 0,NaN,undefined,document.all,false
+//  //                                                         Truty
+//  if(1){
+// console.log("True")
+//  }
+//  else{
+//     console.log("False")
 
- if(0){
-    console.log("True")
-     }
-     else{
-        console.log("False")
+//  }
+//  //                                                         Truty
+
+//  //                                                         Falsy
+
+//  // Falsy value ye hai 0,NaN,undefined,document.all,false
+
+//  if(0){
+//     console.log("True")
+//      }
+//      else{
+//         console.log("False")
     
-     }
+//      }
 
- //                                                         Falsy
+//  //                                                         Falsy
 
- //                                                                Truty & Falsy
+//  //                                                                Truty & Falsy
 
- //                                                        Forin Loop
+//  //                                                        Forin Loop
 
-//  // object par loop chalane ke leye forin loop hota hai
+// //  // object par loop chalane ke leye forin loop hota hai
  
- var obj={
-    name:'saim',
-    age:23,
-    city:'karachi',
- }
- for (var key in obj){
-    document.write(key,obj[key] +'<br>')
- }
- //                                                        Forin Loop
+//  var obj={
+//     name:'saim',
+//     age:23,
+//     city:'karachi',
+//  }
+//  for (var key in obj){
+//     document.write(key,obj[key] +'<br>')
+//  }
+//  //                                                        Forin Loop
 
 
- //                                                     CallBack Function
+//  //                                                     CallBack Function
 
- setTimeout(function(){
-    console.log('hello world')
- },3000)
- //                                                     CallBack Function
+//  setTimeout(function(){
+//     console.log('hello world')
+//  },3000)
+//  //                                                     CallBack Function
 
-//  //                                                     FirstClass Function
+// //  //                                                     FirstClass Function
 
-function abcd(a){
-    a();
-}
+// function abcd(a){
+//     a();
+// }
 
-abcd(function(){console.log('hello viewer')})
+// abcd(function(){console.log('hello viewer')})
 
-//  //                                                     FisrtClass Function
+// //  //                                                     FisrtClass Function
+
+// //  //                                                    Constructor Function
+// function biscuit(colors){
+//     this.width='12px';
+//     this.heigth='20px';
+//     this.color=colors;
+// }
+
+//  console.log(new biscuit('red'))
+//  console.log(new biscuit('green'))
+//  console.log(new biscuit('purple'))
 
 //  //                                                    Constructor Function
-function biscuit(colors){
-    this.width='12px';
-    this.heigth='20px';
-    this.color=colors;
-}
-
- console.log(new biscuit('red'))
- console.log(new biscuit('green'))
- console.log(new biscuit('purple'))
-
- //                                                    Constructor Function
 
 
- //                                                    IIFE  ( Immediately Invoked Function Expression)
+//  //                                                    IIFE  ( Immediately Invoked Function Expression)
 
-//pending
- //                                                    IIFE  ( Immediately Invoked Function Expression)
+// //pending
+//  //                                                    IIFE  ( Immediately Invoked Function Expression)
 
- //                                                    Protoype Inheritance
- var human={
-    canwalk:true,
-    cantalk:true,
-    canfly:false,
- }
- var students={
-    speakeEnglish:true,
-    understandMath:true,
-    learncomputer:true,
- }
- students.__proto__=human
- //                                                    Protoype Inheritance
+//  //                                                    Protoype Inheritance
+//  var human={
+//     canwalk:true,
+//     cantalk:true,
+//     canfly:false,
+//  }
+//  var students={
+//     speakeEnglish:true,
+//     understandMath:true,
+//     learncomputer:true,
+//  }
+//  students.__proto__=human
+//  //                                                    Protoype Inheritance
 
- //                                                    this 
+//  //                                                    this 
 
-//  global scope 
+// //  global scope 
 
-console.log(this)
+// console.log(this)
 
-//  global scope 
+// //  global scope 
 
-//  local scope 
-function ans(){
-    console.log(this)
-}
-ans()
-//  local scope
+// //  local scope 
+// function ans(){
+//     console.log(this)
+// }
+// ans()
+// //  local scope
 
-//  Method scope 
-var THIS={
+// //  Method scope 
+// var THIS={
    
-    con:function(){
-        console.log(this)
-    },
-    name:"saim",
-    age:21
-}
-THIS.con();
+//     con:function(){
+//         console.log(this)
+//     },
+//     name:"saim",
+//     age:21
+// }
+// THIS.con();
 
-//  Method scope 
+// //  Method scope 
 
-
- 
- //                                                    this 
-
- //                                                   Call
-function saim(val1,val2,val3){
-    console.log(this,val1,val2,val3)
-}
-var obj={name:"saim"}
-saim.call(obj,1,2,3)
- //                                                   Call 
 
  
- //                                                   apply
-function da(val1,val2,val3){
-    console.log(this,val1,val2,val3)
-}
-var obj1={name:"saim",age:19}
-da.apply(obj1,[1,2,3])
- //                                                   apply 
+//  //                                                    this 
 
-  //                                                   bind
-function e(val1,val2,val3){
-    console.log(this[0])
-}
- var bind =e.bind("bird cow",)
- bind()
+//  //                                                   Call
+// function saim(val1,val2,val3){
+//     console.log(this,val1,val2,val3)
+// }
+// var obj={name:"saim"}
+// saim.call(obj,1,2,3)
+//  //                                                   Call 
+
+ 
+//  //                                                   apply
+// function da(val1,val2,val3){
+//     console.log(this,val1,val2,val3)
+// }
+// var obj1={name:"saim",age:19}
+// da.apply(obj1,[1,2,3])
+//  //                                                   apply 
+
+//   //                                                   bind
+// function e(val1,val2,val3){
+//     console.log(this[0])
+// }
+//  var bind =e.bind("bird cow",)
+//  bind()
 
  //                                                   bind 
+
+ //                                                   Main/Side Stack 
+console.log("hello 1")
+console.log("hello 2")
+console.log("hello 3")
+console.log("hello 4")
+console.log("hello 5")
+
+setTimeout(function(){
+    console.log("hello  6")
+},3000)
+
+setTimeout(function(){
+    console.log("hello  7")
+},0)
+setTimeout(function(){
+    console.log("hello  8")
+},6000)
+
+ //                                                   Main/Side Stack 
+
+ //                                                   Promises
+//   pending
+ //                                                   Promises
+
+ //                                                   Async Await
+ async function fet(){
+  var row = await fetch('https://randomuser.me/api/')
+  let ans = await row.json()
+console.log(ans)
+
+ }
+ fet()
+ //                                                   Async Await
+
+
+
 
 
  
