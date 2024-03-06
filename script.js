@@ -1,6 +1,8 @@
 var timer=60;
 var hit =0;
 var score=0;
+var audio = new Audio();
+
 function MakeBubbles(){
 var clutter="";
 for(var i=1;i<=162;i++){
@@ -21,8 +23,11 @@ function increasescore(){
         if(det===hit){
             score+=10;
             document.querySelector('#score').textContent=score
+            audio.src='./shooting-sound-fx-159024.mp3';
+            audio.play()
             MakeBubbles()
             HitSocre()
+
         }
     })
 }
